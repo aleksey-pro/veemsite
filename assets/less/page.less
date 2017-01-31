@@ -1,0 +1,176 @@
+.container-fluid {
+  height: 82px;
+  background-color: @blue;
+}
+
+.banner {
+  background: transparent url(../images/banner_bg2.jpg) center no-repeat;
+  overflow: hidden;
+}
+
+.banner_wrapper {
+  background-color: @blue;
+  margin-top: 25px;
+  margin-bottom: 60px;
+  padding-left: 42px;
+}
+
+.banner_badge {
+  display: inline-block;
+  background-color: #fff;
+  text-transform: uppercase;
+  font-size: 30px;
+  color: @red;
+  padding: 10px 15px;
+  font-weight: 700;
+  margin: 45px 0;
+}
+
+.banner__text {
+  color: #fff;
+  font-size: 30px;
+  line-height: 41px;
+  margin: 0 0 50px 0;
+}
+
+.form {
+  background-color: @light-blue;
+  border: 2px solid @border-blue;
+  margin: 24px 0;
+
+  &__heading {
+    color: #fff;
+    font-size: 18px;
+    margin: 18px 0 !important;
+    text-align: center;
+    line-height: 28px;
+  }
+
+  &__input {
+    width: 100%;
+    margin: 10px auto;
+  }
+}
+
+.form__btn {
+  margin: 28px auto;
+  padding: 12px 0;
+  background-color: @red;  
+  text-align: center;
+  transition: all .3s ease-in-out;
+  
+  a {
+    font-size: 18px;
+    line-height: 1;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  &:hover {
+    background-color: lighten(@red, 20%);
+  }
+}
+
+.intro {
+  background-color: @sect-bg;
+
+  &__image {
+    margin-top: 45px;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 45px;
+    text-align: justify;
+  }
+}
+
+.overview__link {
+  margin-bottom: 54px;
+
+  a {
+    color: @light-blue;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    margin-left: 46px;
+    margin-right: 92px;
+  }
+
+  a:before {
+    content: '';
+    position: absolute;
+    background-image: url(../images/overview_icon.png);
+    height: 32px;
+    width: 31px;
+    left: -46px;
+    top: -5px;
+  }
+}
+
+.navigation {
+  border-bottom: 2px solid #e9e9e9;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  .nav-list__link {
+    float: left;
+    display: block;
+    font-size: 20px;
+    color: #444444;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-right: 95px;
+    padding: 28px 0;
+
+    &:hover, &:active {
+      color: @green;
+    }
+
+  }
+
+  .btn-link {
+    display: inline-block;
+    background-color: @red;
+    color: #fff;
+    line-height: 1;
+    margin-right: 0;
+    padding-right: 56px;
+    padding-left: 56px;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      background-color: lighten(@red, 20%);
+      color: inherit;
+    }
+  }
+
+}
+
+.left-column > img, .right-column > img, .veeam__cloud  {
+  display: block;
+  margin: 0 auto;
+}
+
+.benefits .overview__link {
+  margin-top: 18px;
+}
+
+
+.backups {
+  background-color: @sect-bg;
+}
+
+.backups-line {
+  height: 2px;
+  background-color: #cfd5dc;
+}
+
+
