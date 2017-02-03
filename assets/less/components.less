@@ -1,0 +1,51 @@
+.form__btn {
+  margin: 22px 0;
+  padding: 10px 0;
+  background-color: @red;
+  text-align: center;
+  width: 95%;
+  transition: all .3s ease-in-out;
+
+  a {
+    .font (18px, 1, #fff, left);
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  &:hover {
+    background-color: lighten(@red, 20%);
+  }
+}
+
+.overview__link {
+  color: @light-blue;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  margin-left: 60px;
+  margin-right: 25px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 32px;
+    width: 31px;
+    left: -56px;
+    top: -5px;
+  }
+}
+
+.social-link {
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 21px;
+    width: 21px;
+    left: -32px;
+  }
+}
+

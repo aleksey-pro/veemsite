@@ -1,0 +1,26 @@
+//colors
+
+@green: #54b948;
+@blue: #0067c5;
+@light-blue: #1a76cb;
+@red: #f13037;
+@sect-bg: #e5e9ee;
+@footer-bg: #393939;
+
+//font-mixin
+
+.font (@size, @line-h, @color, @align){
+  font-size: @size;
+  color: @color;
+  line-height: @line-h;
+  text-align: @align;
+}
+
+.handheld-centered {
+  @media screen and (max-width: 992px) {
+    text-align: center;
+  }
+}
+
+@media_mobile : ~"all and (max-width: 480px) and (min-width: 320px)";
+
