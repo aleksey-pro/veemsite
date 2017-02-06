@@ -29,5 +29,18 @@ $(document).ready(function() {
       }
     })
 
+  // Mobile menu @ max-width: 480px
+
+  $('.mobile-trigger').click(function() {
+    $('.navigation__blocks').slideToggle('slow');
+  });
+
+  $(window).resize(function() {
+    if (  $(window).width() > 480 ) {
+      $('.navigation__blocks').removeAttr('style');
+    }
+  });
+
+
 });
 
