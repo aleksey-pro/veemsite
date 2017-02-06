@@ -10,3 +10,9 @@ About the task to increase conversion.
 
  - I would double the download submit form to the bottom of the page. In this case a client could fill it after reading all the information, without scrolling the page up.
  - I would place a customers reviews after describing every feature. In the reviews they would tell how the feature had helped them to solve a task.
+
+
+So as to new tasks
+
+Please, look at commits tree to watch work timeline.
+I also changed line heights and some paddings from "px" "em"s to make text containers more flexible.
