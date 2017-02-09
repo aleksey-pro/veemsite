@@ -66,7 +66,7 @@ img {
   }
 }
 .form__btn {
-  margin: 22px 0;
+  margin: 22px auto;
   padding: 10px 0;
   background-color: #f13037;
   text-align: center;
@@ -78,6 +78,7 @@ img {
   color: #ffffff;
   line-height: 1;
   text-align: left;
+  font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -124,10 +125,10 @@ img {
   }
 }
 .header__wrapper {
-  padding: 0 -10px;
+  padding-left: 0!important;
 }
 .header .veeam-logo {
-  margin: 17px 0;
+  margin: calc(13.5px) 0;
   width: auto;
 }
 .header .blue-wrapper {
@@ -146,16 +147,22 @@ img {
   }
 }
 .bonus {
+  display: table;
   background-color: #0067c5;
   transform: skewX(-40deg);
   -webkit-transform: skewX(-40deg);
   border-left: 18px solid #54b948;
+  height: 82px;
+  padding-bottom: 4px;
+  padding-right: 34px;
 }
 .bonus__content {
   transform: skewX(40deg);
   -webkit-transform: skewX(40deg);
-  padding-left: 24px;
-  padding-top: 5px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  font-family: "Myriad Pro Light", sans-serif;
 }
 .bonus__text {
   font-size: 19px;
@@ -164,7 +171,8 @@ img {
 }
 .bonus__sm-text {
   color: #fff;
-  margin: 0.6em;
+  margin: 0.2em;
+  font-size: 14px;
 }
 .banner {
   background: transparent url(../images/banner_bg2.jpg) center no-repeat;
@@ -222,6 +230,7 @@ img {
   color: #ffffff;
   line-height: 1.56em;
   text-align: center;
+  font-weight: 700;
   margin: 5px 0 !important;
 }
 .form__input {
@@ -331,6 +340,7 @@ img {
   color: #ffffff;
   line-height: 1;
   text-align: center;
+  font-weight: 700;
   padding: 1.75em 0;
   display: block;
   background-color: #f13037;

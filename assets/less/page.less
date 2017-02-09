@@ -6,11 +6,11 @@
   .handheld-centered;
 
   &__wrapper {
-    padding: 0 -10px;
+    padding-left: 0!important;
   }
 
   .veeam-logo {
-    margin: 17px 0;
+    margin: calc((82px - 55px) / 2) 0;
     width: auto;
   }
 
@@ -30,16 +30,22 @@
 }
 
 .bonus {
+  display: table;
   background-color: @blue;
   transform: skewX(-40deg);
   -webkit-transform: skewX(-40deg);
   border-left: 18px solid @green;
+  height: 82px;
+  padding-bottom: 4px; //compensates border-bottom
+  padding-right: 34px;
 
   &__content {
     transform: skewX(40deg);
     -webkit-transform: skewX(40deg);
-    padding-left: 24px;
-    padding-top: 5px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: "Myriad Pro Light", sans-serif;
   }
 
   &__text {
@@ -50,7 +56,8 @@
 
   &__sm-text {
     color: #fff;
-    margin: 0.6em;
+    margin: 0.2em;
+    font-size: 14px;
   }
 }
 
@@ -104,6 +111,7 @@
 
   &__heading {
     .font (18px, 1.56em, #fff, center);
+    font-weight: 700;
     margin: 5px 0 !important;
   }
 
@@ -212,6 +220,7 @@
 
   &__btn {
     .font (20px, 1, #fff, center);
+    font-weight: 700;
     padding: 1.75em 0;
     display: block;
     background-color: @red;

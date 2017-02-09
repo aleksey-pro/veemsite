@@ -1,11 +1,11 @@
 $(document).ready(function() {
   
-  // Adaptive Blue wrapper 
+  // Adaptive Blue wrapper
 
   function resizeWrapper() {
     var corner = $('.bonus__content').offset().left;
-    var padding = parseInt($('.bonus__content').css('padding-left'));
-    var value = $(window).width() - corner - padding;
+    var margin = parseInt($('.bonus__content').css('margin-left'));
+    var value = $(window).width() - corner + margin - 10;
     $('.blue-wrapper').css('width', value);
   }
 
